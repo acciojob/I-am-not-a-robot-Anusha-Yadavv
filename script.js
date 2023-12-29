@@ -53,6 +53,8 @@
                 }
             }
         }
+        // Show the reset button when at least one image is clicked
+        document.getElementById('reset').style.display = 'inline';
     }
 
     // Function to verify selected tiles
@@ -75,6 +77,8 @@
     // Function to reset the state
     function resetState() {
         initialize();
+        // Hide the reset button after resetting the state
+        document.getElementById('reset').style.display = 'none';
     }
 
     // Function to show/hide buttons and message based on the state
